@@ -127,3 +127,6 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = "staticfiles"
+
+
+ALLOWED_HOSTS = ["beacon-demo-production.up.railway.app"]
