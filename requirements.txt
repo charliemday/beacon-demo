@@ -35,7 +35,7 @@ immutables==0.16
 importlib-metadata==4.8.3
 importlib-resources==5.4.0
 ipdb==0.13.7
-ipython==7.16.1
+ipython==7.17.0
 ipython-genutils==0.2.0
 jedi==0.18.0
 jmespath==0.10.0
