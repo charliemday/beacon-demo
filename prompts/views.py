@@ -9,5 +9,5 @@ from .serializers import PromptLogSerializer
 
 class PromptLogListCreateView(ListCreateAPIView):
 
-    queryset = PromptLog.objects.all()
+    queryset = PromptLog.objects.all().order_by('-created')
     serializer_class = PromptLogSerializer
