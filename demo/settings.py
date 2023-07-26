@@ -24,10 +24,7 @@ SECRET_KEY = "lpov)dahscl8(hnitq1moeyq17m%(ddly!oam1u&yctqv8m4tg"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
-
-
+ 
 # Application definition
 
 INSTALLED_APPS = [
@@ -50,7 +47,11 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware"
 ]
+
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = "demo.urls"
 
@@ -132,4 +133,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
-ALLOWED_HOSTS = ["beacon-demo-production.up.railway.app"]
+ALLOWED_HOSTS = ["beacon-demo-production.up.railway.app", "localhost"]
